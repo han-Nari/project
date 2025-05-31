@@ -44,7 +44,7 @@ html {
     min-height: 80vh;
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url("assets/bg.webp") no-repeat center fixed;
+      url("./assets/bg.webp") no-repeat center fixed;
     background-size: cover;
   }
 
@@ -184,7 +184,7 @@ html {
   /* Skills */
   .wrapper-skills {
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-      url("assets/bg.webp") no-repeat center fixed;
+      url("./assets/bg.webp") no-repeat center fixed;
     background-size: cover;
   }
 
