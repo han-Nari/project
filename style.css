@@ -475,6 +475,7 @@ html {
     align-items: start;
     gap: 1.5rem;
     transition: 0.3s;
+    overflow: auto;
   }
 
   .card-details.details {
