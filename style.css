@@ -490,7 +490,7 @@ html {
 
   /* Project Details */
   .text-details {
-    width: min(350px, 100%);
+    width: min(400px, 100%);
     margin-inline: auto;
     display: grid;
     gap: 1rem;
