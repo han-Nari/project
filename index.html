@@ -226,7 +226,7 @@
             <img src="assets/challenge02.png" alt="Front-end Challenge 02" />
             <div class="inset">
               <button
-                onclick="showDetails('assets/challenge02.png')"
+                onclick="showDetails('assets/challenge02.png', 'challenge02')"
                 class="btn"
               >
                 View
@@ -238,7 +238,7 @@
             <img src="assets/challenge01.png" alt="Front-end Challenge 02" />
             <div class="inset">
               <button
-                onclick="showDetails('assets/challenge01.png')"
+                onclick="showDetails('assets/challenge01.png', 'challenge01')"
                 class="btn"
               >
                 View
@@ -246,7 +246,7 @@
             </div>
           </div>
           <!-- Card number 3 -->
-          <div class="card-view">
+          <!-- <div class="card-view">
             <img src="assets/challenge01.png" alt="Front-end Challenge 02" />
             <div class="inset">
               <button
@@ -256,7 +256,7 @@
                 View
               </button>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -281,21 +281,15 @@
             />
           </svg>
         </button>
-        <img class="card-img" width="400" id="imgDetail" />
+        <img class="card-view card-img" width="400" id="imgDetail" />
 
         <div class="text-details">
-          <h2>Project Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            molestias nemo fuga maiores temporibus perspiciatis delectus,
-            provident quo, veritatis porro quas accusantium. Nihil ipsam,
-            delectus tenetur labore illum blanditiis. Dolores, doloremque in
-            obcaecati ad nulla corporis hic aut aperiam quis repudiandae
-            accusamus unde eius vero officia error vel veritatis quo?
-          </p>
+          <h2 class="project-name"></h2>
+          <p class="myinfo"></p>
+          <a target="_blank" class="ch1" href="">Front-end Mentor Link</a>
           <div class="github">
-            <a class="view" href="#">Live View</a>
-            <a class="source" href="#">Source Code</a>
+            <a target="_blank" class="view" href="">Live View</a>
+            <a target="_blank" class="source" href="#">Source Code</a>
           </div>
         </div>
       </div>

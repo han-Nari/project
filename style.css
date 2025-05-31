@@ -498,7 +498,7 @@ html {
   }
 
   .text-details h2 {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
     color: var(--clr-light-a0);
     line-height: 1;
   }
@@ -509,8 +509,12 @@ html {
 
   .card-img {
     margin-inline: auto;
-    padding: 0.3em;
-    background-color: var(--clr-green);
+  }
+
+  .ch1 {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--clr-green);
   }
 
   /* Footer */
