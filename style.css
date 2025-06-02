@@ -167,9 +167,13 @@ html {
     color: var(--clr-light-a0);
   }
 
-  .name {
-    color: var(--clr-green);
+  .name,
+  .felix {
     font-weight: var(--font-weight-h);
+  }
+
+  .felix {
+    color: var(--clr-green);
   }
 
   /* Wrapper Style */
@@ -221,7 +225,7 @@ html {
 
   nav a {
     text-decoration: none;
-    color: var(--clr-light-a0);
+    color: lightgray;
     font-weight: var(--font-weight-md);
     font-size: var(--font-size-ssm);
   }
@@ -334,6 +338,7 @@ html {
     padding: 0.5em 1.4em;
     border: 1px solid var(--clr-light-a0);
     color: var(--clr-light-a0);
+    border-radius: 5px;
   }
 
   .btn:hover {
@@ -401,7 +406,6 @@ html {
 
   .card .text h2 {
     font-size: var(--font-size-md);
-    color: var(--clr-green);
   }
 
   .card .text p {
@@ -425,18 +429,26 @@ html {
   /* Project */
   .card-project {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
   }
 
   .card-view {
     position: relative;
-    padding: 0.3em;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .card-view,
+  .card-view img,
+  .card-view .inset,
+  .card-view:hover .inset,
+  .card-view:hover img {
+    border-radius: 10px;
   }
 
   .card-view img {
     display: block;
+    padding: 0.3em;
   }
 
   .card-view .inset {
@@ -445,7 +457,7 @@ html {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: end;
-    align-items: start;
+    align-items: end;
     visibility: hidden;
     transition: 0.1s;
     flex-direction: column;
@@ -456,8 +468,10 @@ html {
     cursor: pointer;
   }
 
-  .card-view:hover .inset {
+  .card-view:hover .inset,
+  .card-view:hover img {
     visibility: visible;
+    transform: scale(1.1);
   }
 
   .card-details {
