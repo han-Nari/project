@@ -187,18 +187,18 @@ html {
   /* Wrapper Education */
   .wrapper-educ {
     min-height: 70vh;
-    padding-block: 2em;
-  }
-
-  /* Wrapper Skills */
-  .wrapper-skills {
-    padding-block: 2em;
   }
 
   /* Wrapper Project */
   .wrapper-project {
     min-height: auto;
-    padding-block: 5em;
+  }
+
+  .wrapper-educ,
+  .wrapper-skills,
+  .wrapper-project,
+  footer {
+    padding-block: 2em;
   }
 
   /* Navigation */
@@ -347,18 +347,12 @@ html {
     color: var(--clr-light-a0);
     padding: 0.3em 0.5em;
     font-size: var(--font-size-ssm);
+    border: 1px solid var(--clr-light-a0);
+    border-radius: 5px;
   }
 
-  .source {
-    color: var(--clr-light-a0);
-    border: 1px solid var(--clr-green);
-  }
-
-  .view {
-    background-color: var(--clr-green);
-  }
-
-  .source:hover {
+  .source:hover,
+  .view:hover {
     background-color: var(--clr-green);
     color: var(--clr-light-a0);
   }
@@ -433,11 +427,15 @@ html {
     color: var(--clr-light-a0);
   }
 
+  .box:hover {
+    transform: scale(1.1);
+  }
+
   /* Project */
   .card-project {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
   }
 
   .card-view {
@@ -528,6 +526,10 @@ html {
     color: var(--clr-light-a0);
   }
 
+  .text-details .language {
+    font-size: var(--font-size-sm);
+  }
+
   .card-img {
     margin-inline: auto;
   }
@@ -536,6 +538,10 @@ html {
     text-decoration: underline;
     cursor: pointer;
     color: var(--clr-green);
+  }
+
+  .lang {
+    width: 40px;
   }
 
   /* Footer */
