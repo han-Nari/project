@@ -34,13 +34,6 @@ html {
     color: var(--clr-light-a0);
   }
 
-  main,
-  .wrapper-educ,
-  .wrapper-project,
-  .wrapper-skills {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
   header {
     position: sticky;
     top: 0;
@@ -149,13 +142,13 @@ html {
     color: var(--clr-green);
   }
 
-  .img {
-    width: min(80px, 15%);
+  img {
+    max-width: 100%;
     height: auto;
   }
 
-  img {
-    max-width: 100%;
+  .img {
+    width: 90px;
     height: auto;
   }
 
@@ -163,7 +156,7 @@ html {
     font-size: var(--font-size-lg);
     text-align: center;
     font-weight: var(--font-weight-h);
-    padding-bottom: 1em;
+    padding: 1em;
     color: var(--clr-light-a0);
   }
 
@@ -194,15 +187,6 @@ html {
   /* Wrapper Education */
   .wrapper-educ {
     min-height: 70vh;
-    padding-block: 4em;
-  }
-
-  /* Skills */
-  .wrapper-skill {
-    display: grid;
-    place-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
-    padding-block: 2em;
   }
 
   /* Wrapper Project */
@@ -420,10 +404,32 @@ html {
   /* Skills & Tools */
   .skills {
     display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 1rem;
+
+    @media (max-width: 550px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .box {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 1rem;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    padding: 1em;
+    background-color: rgb(5, 17, 24);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 var(--clr-light-a0);
+  }
+
+  .box .text {
+    font-size: var(--font-size-sm);
+    color: var(--clr-light-a0);
   }
 
   /* Project */
@@ -471,7 +477,7 @@ html {
   .card-view:hover .inset,
   .card-view:hover img {
     visibility: visible;
-    transform: scale(1.1);
+    transform: scale(0.95);
   }
 
   .card-details {
