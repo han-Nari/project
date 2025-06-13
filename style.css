@@ -148,7 +148,7 @@ html {
   }
 
   .img {
-    width: 90px;
+    width: 80px;
     height: auto;
   }
 
@@ -156,7 +156,7 @@ html {
     font-size: var(--font-size-lg);
     text-align: center;
     font-weight: var(--font-weight-h);
-    padding: 1em;
+    padding-bottom: 1em;
     color: var(--clr-light-a0);
   }
 
@@ -187,6 +187,12 @@ html {
   /* Wrapper Education */
   .wrapper-educ {
     min-height: 70vh;
+    padding-block: 2em;
+  }
+
+  /* Wrapper Skills */
+  .wrapper-skills {
+    padding-block: 2em;
   }
 
   /* Wrapper Project */
@@ -414,7 +420,7 @@ html {
     place-content: center;
     text-align: center;
     gap: 1rem;
-    width: 200px;
+    width: 180px;
     aspect-ratio: 1 / 1;
     padding: 1em;
     background-color: rgb(5, 17, 24);
@@ -436,7 +442,7 @@ html {
 
   .card-view {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px 0 var(--clr-light-a0);
   }
 
   .card-view,
