@@ -52,13 +52,6 @@ html {
     color: var(--clr-light-a0);
     padding-block: 1em;
   }
-
-  mark {
-    padding: 4px;
-    font-weight: var(--font-weight-h);
-    background-color: green;
-    color: var(--clr-light-a0);
-  }
 }
 
 /* Theme */
@@ -104,10 +97,10 @@ html {
 
     /* Font size  */
     --font-size-ssm: clamp(1rem, 3vw, 1.1rem);
-    --font-size-sm: clamp(1.1rem, 4vw, 1.4rem);
+    --font-size-sm: clamp(1.1rem, 4vw, 1.2rem);
     --font-size-md: clamp(1.3rem, 3vw, 2rem);
-    --font-size-lg: clamp(2rem, 6vw, 3rem);
-    --font-size-xl: clamp(3.5rem, 10vw, 5rem);
+    --font-size-lg: clamp(2rem, 6vw, 2.8rem);
+    --font-size-xl: clamp(3.5rem, 10vw, 4.8rem);
   }
 }
 
@@ -149,7 +142,7 @@ html {
 
   .img {
     height: auto;
-    width: 80px;
+    width: 70px;
   }
 
   .title {
@@ -194,6 +187,10 @@ html {
     min-height: auto;
   }
 
+  .wrapper-educ {
+    background-color: rgba(255, 255, 255, 0.24);
+  }
+
   .wrapper-educ,
   .wrapper-skills,
   .wrapper-project,
@@ -217,7 +214,7 @@ html {
     text-decoration: none;
     color: lightgray;
     font-weight: var(--font-weight-md);
-    font-size: var(--font-size-ssm);
+    font-size: var(--font-size-sm);
   }
 
   nav a:hover {
@@ -288,7 +285,13 @@ html {
   .intro {
     font-weight: var(--font-weight-n);
     font-size: var(--font-size-sm);
-    opacity: 0.9;
+  }
+
+  mark {
+    padding: 4px;
+    font-weight: var(--font-weight-h);
+    background-color: green;
+    color: var(--clr-light-a0);
   }
 
   .hero-section {
@@ -378,18 +381,27 @@ html {
   .card {
     display: flex;
     gap: 2rem;
-    padding: 1em;
+    padding-block: 1em;
     justify-content: space-around;
-    border-left: 2px solid var(--clr-green);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   .card .text {
     display: grid;
+    gap: 2rem;
     width: 100%;
   }
 
   .card .text h2 {
     font-size: var(--font-size-md);
+    padding-left: 1em;
+    width: 100%;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 50px solid var(--clr-green);
+    display: flex;
+    align-items: center;
   }
 
   .card .text p {
@@ -407,7 +419,6 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    border: 1px solid red;
   }
 
   .box {
@@ -435,7 +446,7 @@ html {
   .card-project {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
   }
 
   .card-view {
@@ -548,6 +559,7 @@ html {
   .footer {
     display: grid;
     gap: 1rem;
+    background-color: #000000;
   }
 
   .flex {
