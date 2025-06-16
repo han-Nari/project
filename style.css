@@ -459,6 +459,10 @@ html {
     padding: 1em;
     background-color: rgb(5, 17, 24);
     border: 4px dotted var(--clr-aqua);
+
+    @media (max-width: 600px) {
+      width: 130px;
+    }
   }
 
   .box .text {
