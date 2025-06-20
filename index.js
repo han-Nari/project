@@ -46,17 +46,6 @@ const challengeLinks = {
   },
 };
 
-links.forEach((item) => {
-  item.addEventListener("click", () => {
-    links.forEach((item) => {
-      item.classList.remove("active");
-    });
-
-    item.classList.add("active");
-    closeNav();
-  });
-});
-
 function openNav() {
   navBar.classList.add("show");
   overlay.classList.add("show");
@@ -95,4 +84,13 @@ function closeOverLay2() {
   closeDetails();
 }
 
-console.log(overlay2);
+links.forEach((item) => {
+  item.addEventListener("click", () => {
+    links.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    item.classList.add("active");
+    closeNav();
+  });
+});

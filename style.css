@@ -43,6 +43,7 @@ html {
 
   main {
     display: flex;
+    align-items: center;
     min-height: 80vh;
   }
 
@@ -96,9 +97,9 @@ html {
     /* Font size  */
     --font-size-ssm: clamp(1rem, 3vw, 1.1rem);
     --font-size-sm: clamp(1.1rem, 4vw, 1.2rem);
-    --font-size-md: clamp(1.5rem, 3vw, 2rem);
+    --font-size-md: clamp(1.5rem, 3vw, 1.6rem);
     --font-size-lg: clamp(2rem, 6vw, 2.8rem);
-    --font-size-xl: clamp(3.5rem, 10vw, 4.8rem);
+    --font-size-xl: clamp(3.5rem, 10vw, 4rem);
   }
 }
 
@@ -179,7 +180,7 @@ html {
     min-height: 5rem;
   }
 
-  /* Wrapper Education */
+  /* Wrapper About */
   .wrapper-educ {
     min-height: 70vh;
   }
@@ -189,8 +190,9 @@ html {
     min-height: auto;
   }
 
-  .wrapper-educ {
-    background-color: #1b1b1b;
+  .wrapper-educ,
+  footer {
+    background-color: rgb(10, 11, 12);
   }
 
   .wrapper-educ,
@@ -281,13 +283,9 @@ html {
 
   /* Hero Section */
   .hero-section {
+    padding-block: 5em;
     display: flex;
-    justify-content: space-between;
-    padding-block: 7em;
-
-    @media (max-width: 600px) {
-      display: block;
-    }
+    gap: 2rem;
   }
 
   .my-section {
@@ -314,7 +312,6 @@ html {
 
   .hero-section h1 {
     font-size: var(--font-size-xl);
-    margin: 0;
   }
 
   .intro {
@@ -328,6 +325,41 @@ html {
     background-color: var(--clr-aqua);
     color: var(--clr-light-a0);
     padding: 0.2em;
+  }
+
+  .my-img {
+    align-self: center;
+  }
+
+  .leks {
+    border-radius: 100%;
+    border: 10px double var(--clr-aqua);
+  }
+
+  .qoute {
+    font-size: var(--font-size-lg);
+    color: var(--clr-aqua);
+  }
+
+  @media (max-width: 600px) {
+    .hero-section {
+      flex-wrap: wrap;
+    }
+
+    .my-section {
+      text-align: center;
+      align-items: center;
+      order: 2;
+    }
+
+    .my-img {
+      order: 1;
+      text-align: center;
+    }
+
+    .leks {
+      width: 70%;
+    }
   }
 
   /* Buttons */
@@ -402,44 +434,37 @@ html {
   }
 
   /* Education */
-  .cards {
+  .my-detail {
+    display: flex;
+    gap: 5rem;
+    min-height: 60vh;
+    @media (max-width: 600px) {
+      gap: 0;
+      min-height: auto;
+    }
+  }
+
+  .my-text {
+    align-self: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
     gap: 1.5rem;
   }
 
-  .card {
-    display: flex;
-    padding-block: 1em;
-    justify-content: space-around;
-    border-bottom: 4px dotted rgba(255, 255, 255, 0.5);
+  .self {
+    font-size: var(--font-size-sm);
+    color: lightgray;
   }
 
-  .card .text {
-    display: grid;
-    gap: 0.5rem;
-    width: 100%;
+  strong {
+    color: var(--clr-aqua);
   }
 
-  .card .text h2 {
-    font-size: var(--font-size-md);
-    padding-left: 0.5em;
-    width: 100%;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid var(--clr-aqua);
-    display: flex;
-    align-items: center;
-  }
-
-  .card .text p {
-    font-size: var(--font-size-ssm);
-    color: var(--clr-light-a0);
-  }
-
-  .card .icon {
-    align-self: center;
+  .lek {
+    position: relative;
+    border-bottom: 5px double var(--clr-aqua);
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 
   /* Skills & Tools */
@@ -460,7 +485,7 @@ html {
     background-color: rgb(5, 17, 24);
     border: 4px dotted var(--clr-aqua);
 
-    @media (max-width: 600px) {
+    @media (max-width: 750px) {
       width: 130px;
     }
   }
@@ -513,6 +538,7 @@ html {
 
   .card-view .inset .btn {
     margin: 1em;
+    padding: 0.8em;
     cursor: pointer;
   }
 
@@ -588,9 +614,6 @@ html {
   }
 
   /* Footer */
-  footer {
-    background-color: #000000;
-  }
 
   .footer {
     display: grid;
@@ -608,8 +631,7 @@ html {
   }
 
   .contact .circle {
-    border-radius: 100%;
-    border: 4px dotted var(--clr-aqua);
+    border-right: 1px solid var(--clr-aqua);
     width: 70px;
     display: grid;
     place-content: center;

@@ -35,7 +35,7 @@
               <a class="active" href="#home"> Home </a>
             </li>
             <li>
-              <a href="#educ">Education</a>
+              <a href="#about">About</a>
             </li>
             <li>
               <a href="#skills">Skills</a>
@@ -67,16 +67,15 @@
     <main id="home">
       <div class="wrapper">
         <section class="hero-section">
-          <span class="my-section">
+          <div class="my-section">
             <p class="myname">Hello, I am<span class="felix"> Felix</span></p>
-            <h1>I'm Front-end Developer</h1>
+            <h1>Front-end Developer</h1>
             <p class="intro">
-              <mark> I'm a self-taught front-end developer.</mark> Passionate
+              <mark> I'm a self-taught front-end developer,</mark> passionate
               about building interactive and responsive web experiences. I'm
               currently focused on sharpening my skills and exploring new
               technologies to grow as a developer.
             </p>
-
             <a class="links" href="assets/Felix.pdf" download>
               <span>
                 <svg
@@ -93,77 +92,56 @@
               </span>
               <span>Download CV</span>
             </a>
-          </span>
-          <span class="hero-link">
-            <img class="img" src="./assets/github.svg" alt="github" />
-            <img class="img" src="./assets/linkdin.svg" alt="linkdin" />
-            <img class="img" src="./assets/gmail.svg" alt="gmail" />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="40px"
-              viewBox="0 -960 960 960"
-              width="40px"
-              fill="#ffffff"
-            >
-              <path
-                d="M480-80 200-360l56-56 184 183v-647h80v647l184-184 56 57L480-80Z"
-              />
-            </svg>
-          </span>
+          </div>
+          <div class="my-img">
+            <img
+              src="assets/lek.jpg"
+              alt="lek"
+              height="1000px"
+              width="1000px"
+              class="leks"
+            />
+          </div>
         </section>
       </div>
     </main>
 
-    <section id="educ" class="wrapper-educ">
+    <section id="about" class="wrapper-educ">
       <div class="wrapper">
-        <h2 class="title"><span class="h2">"Educational</span> Background</h2>
-        <div class="cards">
-          <div class="card">
-            <div class="text">
-              <h2>Elementary School</h2>
-              <p>
-                <span class="name">School:</span> Bagong Barrio Elementary
-                School
-              </p>
-              <p><span class="name">Year:</span> SY 2006-2010</p>
-              <p>
-                <span class="name">School:</span> Lingunan Elementary School
-              </p>
-              <p><span class="name">Year:</span> SY 2010-2012</p>
-            </div>
+        <h2 class="title"><span class="h2">"About</span> Me</h2>
+        <div class="my-detail">
+          <div class="my-image">
+            <img
+              class="lek"
+              src="assets/lek.jpg"
+              alt="lek"
+              height="1000px"
+              width="1000px"
+            />
           </div>
+          <div class="my-text">
+            <p class="self">
+              <span class="qoute">"</span>Hi! I'm a self-taught web developer
+              who enjoys building <strong>user-friendly websites</strong>. I
+              specialize in front-end development using <strong>HTML</strong>,
+              <strong>CSS</strong>, and <strong>JavaScript</strong>, and I'm
+              currently expanding my skills in <strong>React</strong>.
+            </p>
 
-          <div class="card">
-            <div class="text">
-              <h2>High School</h2>
-              <p>
-                <span class="name">School:</span> Canumay West National High
-                School
-              </p>
-              <p><span class="name">Year:</span> SY 2012-2017</p>
-            </div>
-          </div>
+            <p class="self">
+              I began my journey into web development around mid-2023. I’ve
+              learned through online resources like
+              <strong>W3Schools</strong> and <strong>YouTube tutorials</strong>.
+              As part of my learning process, I’ve built a few simple websites
+              to apply and showcase my growing skills.
+            </p>
 
-          <div class="card">
-            <div class="text">
-              <h2>Senior High School</h2>
-              <p>
-                <span class="name">School:</span> Valenzuela Christian School
-              </p>
-              <p><span class="name">Year:</span> SY 2017-2019</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="text">
-              <h2>College</h2>
-              <p><span class="name">Course:</span> BS Information Technology</p>
-              <p>
-                <span class="name">School:</span> Bestlink College of the
-                Philippines
-              </p>
-              <p><span class="name">Year:</span> SY 2019-2024</p>
-            </div>
+            <p class="self">
+              I'm currently seeking a <strong>junior developer</strong> role
+              where I can continue to improve my skills, learn new technologies,
+              and gain valuable experience from working with professional
+              developers.<span class="qoute">"</span>
+            </p>
           </div>
         </div>
       </div>
@@ -220,7 +198,7 @@
     <section id="project" class="wrapper-project">
       <div class="wrapper">
         <h2 class="title">
-          <span class="h2">"Project</span>
+          <span class="h2">"Projects</span>
         </h2>
         <div class="card-project">
           <!-- Card number 1 -->
@@ -231,7 +209,7 @@
                 onclick="showDetails('assets/challenge02.png', 'challenge02')"
                 class="btn"
               >
-                View
+                View Project
               </button>
             </div>
           </div>
@@ -243,7 +221,7 @@
                 onclick="showDetails('assets/challenge01.png', 'challenge01')"
                 class="btn"
               >
-                View
+                View Project
               </button>
             </div>
           </div>
@@ -255,7 +233,7 @@
                 onclick="showDetails('assets/challenge03.png', 'challenge03')"
                 class="btn"
               >
-                View
+                View Project
               </button>
             </div>
           </div>
@@ -267,7 +245,7 @@
                 onclick="showDetails('assets/capstone.png', 'capstone')"
                 class="btn"
               >
-                View
+                View Project
               </button>
             </div>
           </div>
@@ -313,9 +291,6 @@
     <footer id="contact">
       <div class="wrapper">
         <div class="footer">
-          <h2 class="title">
-            <span class="h2">"Contact</span>
-          </h2>
           <div class="contact">
             <div class="flex">
               <span class="circle">
