@@ -459,6 +459,34 @@ html {
     color: var(--clr-aqua);
   }
 
+  .html {
+    color: orange;
+  }
+  .css {
+    color: rgb(74, 141, 230);
+  }
+  .js {
+    color: yellow;
+  }
+  .react {
+    color: skyblue;
+  }
+  .schools {
+    color: green;
+  }
+  .yt {
+    color: red;
+  }
+
+  .html,
+  .css,
+  .js,
+  .react,
+  .schools,
+  .yt {
+    border-bottom: 1px dotted var(--clr-light-a0);
+  }
+
   .lek {
     position: relative;
     border-bottom: 5px double var(--clr-aqua);
