@@ -316,9 +316,9 @@ html {
 
   .intro {
     font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-h);
     padding-block: 1em;
     line-height: 1.5;
+    color: lightgray;
   }
 
   mark {
@@ -457,33 +457,6 @@ html {
 
   strong {
     color: var(--clr-aqua);
-  }
-
-  .html {
-    color: orange;
-  }
-  .css {
-    color: rgb(74, 141, 230);
-  }
-  .js {
-    color: yellow;
-  }
-  .react {
-    color: skyblue;
-  }
-  .schools {
-    color: green;
-  }
-  .yt {
-    color: red;
-  }
-
-  .html,
-  .css,
-  .js,
-  .react,
-  .schools,
-  .yt {
     border-bottom: 1px dotted var(--clr-light-a0);
   }
 
