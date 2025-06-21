@@ -332,6 +332,10 @@ html {
     align-self: center;
   }
 
+  .myinfo {
+    font-size: var(--font-size-sm);
+  }
+
   .leks {
     border-radius: 100%;
     border: 10px double var(--clr-aqua);
