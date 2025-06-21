@@ -510,7 +510,7 @@ html {
 
   .card-view {
     position: relative;
-    box-shadow: 0 0 5px 0 var(--clr-aqua);
+    border: 5px double var(--clr-aqua);
   }
 
   .card-view,
