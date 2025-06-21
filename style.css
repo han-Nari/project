@@ -463,7 +463,7 @@ html {
 
   .lek {
     position: relative;
-    border-bottom: 5px double var(--clr-aqua);
+    border-bottom: 10px double var(--clr-aqua);
     @media (max-width: 600px) {
       display: none;
     }
