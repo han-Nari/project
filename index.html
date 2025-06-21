@@ -266,7 +266,7 @@
 
     <!-- Card Details -->
     <section class="wrapper">
-      <div class="card-details">
+      <div role="dialog" class="card-details">
         <button
           onclick="closeDetails()"
           class="icon close"
@@ -284,7 +284,12 @@
             />
           </svg>
         </button>
-        <img class="card-view card-img" width="400" id="imgDetail" />
+        <img
+          class="card-view card-img"
+          width="400"
+          id="imgDetail"
+          alt="details  "
+        />
 
         <div class="text-details">
           <h2 class="project-name"></h2>
