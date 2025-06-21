@@ -132,6 +132,7 @@ html {
 
   .active {
     color: var(--clr-aqua);
+    border-bottom: 1px solid var(--clr-aqua);
   }
 
   img {
