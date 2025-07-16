@@ -255,6 +255,7 @@ html {
     display: inherit;
     align-items: center;
     gap: 1rem;
+    padding-block: 8rem;
   }
 
   .hero-section {
