@@ -404,7 +404,12 @@ html {
     align-items: start;
     gap: 1.5rem;
     transition: 0.3s;
-    overflow: auto;
+    overflow-y: scroll;
+  }
+
+  .card-scroll {
+    overflow: scroll;
+    background-color: red;
   }
 
   .card-details.details {
