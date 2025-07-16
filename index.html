@@ -35,9 +35,6 @@
               <a class="active" href="#home"> Home </a>
             </li>
             <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
               <a href="#skills">Skills</a>
             </li>
             <li>
@@ -65,98 +62,45 @@
     </header>
 
     <main id="home">
-      <div class="wrapper">
+      <div class="wrapper hero">
+        <section class="intro-img">
+          <img class="leks" src="assets/lek.jpg" alt="lek" />
+        </section>
         <section class="hero-section">
-          <div class="my-section">
-            <p class="myname">Hello, I am<span class="felix"> Felix</span></p>
-            <h1>Front-end Developer</h1>
-            <p class="intro">
-              I'm learning to build responsive and interactive websites using
-              HTML, CSS, and JavaScript. Eager to grow, improve, and create
-              real-world web projects.
-            </p>
-            <a
-              class="links"
-              aria-label="Download Curriculum Vitae as PDF"
-              href="assets/Felix.pdf"
-              download
+          <p class="myname">Hello there — I'm Felix, and this is my work</p>
+          <h1>Learning Front-End, One Project at a Time</h1>
+          <p class="intro">
+            I'm a self-taught front-end developer with a focus on HTML, CSS, and
+            JavaScript. I'm learning to build responsive, user-friendly websites
+            and always looking to grow my skills through real-world projects.
+          </p>
+          <a
+            class="links"
+            aria-label="Download Curriculum Vitae as PDF"
+            href="assets/Felix.pdf"
+            download
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
             >
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#ffffff"
-                >
-                  <path
-                    d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"
-                  />
-                </svg>
-              </span>
-              <span>Download CV</span>
-            </a>
-          </div>
-          <div class="my-img">
-            <img
-              src="assets/lek.jpg"
-              alt="lek"
-              height="500px"
-              width="500px"
-              class="leks"
-            />
-          </div>
+              <path
+                d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"
+              />
+            </svg>
+
+            Download CV
+          </a>
         </section>
       </div>
     </main>
 
-    <section id="about" class="wrapper-educ">
-      <div class="wrapper">
-        <h2 class="title"><span class="h2">"About</span> Me</h2>
-        <div class="my-detail">
-          <div class="my-image">
-            <img
-              class="lek"
-              src="assets/lek.jpg"
-              alt="lek"
-              height="1000px"
-              width="1000px"
-            />
-          </div>
-          <div class="my-text">
-            <p class="self">
-              <span class="qoute">"</span>
-              <mark>Hi!, I'm a self-taught web developer</mark> who enjoys
-              building <strong>user-friendly websites</strong>. I specialize in
-              front-end development using <strong class="html">HTML</strong>,
-              <strong class="css">CSS</strong>, and
-              <strong class="js">JavaScript</strong>, and I'm currently
-              expanding my skills in <strong class="react">React</strong>.
-            </p>
-
-            <p class="self">
-              I began my journey into web development around mid-2023. I’ve
-              learned through online resources like
-              <strong class="schools">W3Schools</strong> and
-              <strong class="yt">YouTube</strong> tutorials. As part of my
-              learning process, I’ve built a few simple websites to apply and
-              showcase my growing skills.
-            </p>
-
-            <p class="self">
-              I'm currently seeking a <strong>junior developer</strong> role
-              where I can continue to improve my skills, learn new technologies,
-              and gain valuable experience from working with professional
-              developers.<span class="qoute">"</span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="skills" class="wrapper-skills">
       <div class="wrapper">
-        <h2 class="title"><span class="h2">"Skills</span> & Tools</h2>
+        <h2 class="title">Skills & Tools</h2>
         <div class="skills">
           <div class="box">
             <img class="img" src="assets/html.svg" alt="html" />
@@ -173,10 +117,6 @@
           <div class="box">
             <img class="img" src="assets/reactjs.svg" alt="reactjs" />
             <span class="text">React Js</span>
-          </div>
-          <div class="box">
-            <img class="img" src="assets/nodejs.svg" alt="nodejs" />
-            <span class="text">NodeJs</span>
           </div>
           <div class="box">
             <img class="img" src="assets/figma.svg" alt="figma" />
@@ -204,18 +144,18 @@
 
     <section id="project" class="wrapper-project">
       <div class="wrapper">
-        <h2 class="title">
-          <span class="h2">"Projects</span>
-        </h2>
+        <h2 class="title">Projects</h2>
         <div class="card-project">
           <!-- Card number 1 -->
           <div class="card-view">
             <img src="assets/challenge02.png" alt="Front-end Challenge 02" />
             <div class="inset">
+              <p class="number">01</p>
+              <h1 class="project-title">Browser extension manager UI</h1>
               <button
                 aria-label="View project: Challenge02"
                 onclick="showDetails('assets/challenge02.png', 'challenge02')"
-                class="btn"
+                class="btn-project"
               >
                 View Project
               </button>
@@ -225,10 +165,12 @@
           <div class="card-view">
             <img src="assets/challenge01.png" alt="Front-end Challenge 02" />
             <div class="inset">
+              <p class="number">02</p>
+              <h1 class="project-title">Fylo dark theme landing page</h1>
               <button
                 aria-label="View project: Challenge01"
                 onclick="showDetails('assets/challenge01.png', 'challenge01')"
-                class="btn"
+                class="btn-project"
               >
                 View Project
               </button>
@@ -238,10 +180,12 @@
           <div class="card-view">
             <img src="assets/challenge03.png" alt="Front-end Challenge 03" />
             <div class="inset">
+              <p class="number">03</p>
+              <h1 class="project-title">Product list with cart</h1>
               <button
                 aria-label="View project: Challenge03"
                 onclick="showDetails('assets/challenge03.png', 'challenge03')"
-                class="btn"
+                class="btn-project"
               >
                 View Project
               </button>
@@ -251,10 +195,12 @@
           <div class="card-view">
             <img src="assets/capstone.png" alt="Capstone" />
             <div class="inset">
+              <p class="number">04</p>
+              <h1 class="project-title">Financial Management</h1>
               <button
                 aria-label="View project: Capstone"
                 onclick="showDetails('assets/capstone.png', 'capstone')"
-                class="btn"
+                class="btn-project"
               >
                 View Project
               </button>
@@ -306,65 +252,31 @@
 
     <footer id="contact">
       <div class="wrapper">
-        <div class="footer">
-          <div class="contact">
-            <div class="flex">
-              <span class="circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="40px"
-                  fill="#ffffff"
-                >
-                  <path
-                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
-                  />
-                </svg>
-              </span>
-              <div class="icons">
-                <span><strong>Gmail</strong></span>
-                <span>abungan082198@gmail.com</span>
-              </div>
+        <div class="footer-container">
+          <h2 class="myDetails">My Contact Details</h2>
+          <div class="contacts">
+            <div class="contact">
+              <h5>EMAIL</h5>
+              <p>abungan082198@gmail.com</p>
             </div>
-            <div class="flex">
-              <span class="circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="40px"
-                  fill="#ffffff"
-                >
-                  <path
-                    d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
-                  />
-                </svg>
-              </span>
-              <div class="icons">
-                <span><strong>Phone</strong></span>
-                <span>+63-927-827-9557</span>
-              </div>
+            <div class="contact">
+              <h5>PHONE</h5>
+              <p>+639278279557</p>
             </div>
-            <div class="flex">
-              <div class="circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="40px"
-                  fill="#ffffff"
-                >
-                  <path
-                    d="M480-301q99-80 149.5-154T680-594q0-90-56-148t-144-58q-88 0-144 58t-56 148q0 65 50.5 139T480-301Zm0 101Q339-304 269.5-402T200-594q0-125 78-205.5T480-880q124 0 202 80.5T760-594q0 94-69.5 192T480-200Zm0-320q33 0 56.5-23.5T560-600q0-33-23.5-56.5T480-680q-33 0-56.5 23.5T400-600q0 33 23.5 56.5T480-520ZM200-80v-80h560v80H200Zm280-520Z"
-                  />
-                </svg>
-              </div>
-              <div class="icons">
-                <span><strong>Address</strong></span>
-                <span>18P. Gregorio St. Barangay Lingunan Valenzuela City</span>
-              </div>
-            </div>
+          </div>
+
+          <p class="center">&copy; 2025 Felix — Front-End Developer</p>
+          <div class="footer-links">
+            <a href="https://github.com/han-Nari" target="_blank">GitHub</a> |
+            <a
+              href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage"
+              target="_blank"
+              >Indeed</a
+            >
+            |
+            <a href="https://ph.jobstreet.com/profile/me" target="_blank"
+              >Jobstreet</a
+            >
           </div>
         </div>
       </div>
