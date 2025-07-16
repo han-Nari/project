@@ -313,7 +313,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.6rem;
     margin-inline: auto;
 
     @media (min-width: 800px) {
@@ -434,7 +434,8 @@ html {
   .text-details p {
     color: var(--clr-light-a0);
     font-weight: 100;
-    font-size: var(--font-size-ssm);
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
   }
 
   .text-details .language {
