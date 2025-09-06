@@ -3,48 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/profile.jpg" />
   </head>
   <body>
+    <div id="overlay" class="overlay" onclick="removeNav()"></div>
+    <div onclick="closeOverLay2()" class="overlay2"></div>
     <header>
-      <div onclick="closeOverLay()" class="overlay"></div>
-      <div onclick="closeOverLay2()" class="overlay2"></div>
-      <nav>
-        <div class="wrapper wrapper-nav">
-          <div class="logo">
-            <h3>F<span>A</span></h3>
-          </div>
-          <ul>
-            <li>
-              <button onclick="closeNav()" class="icon" aria-label="Close Nav">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="30px"
-                  viewBox="0 -960 960 960"
-                  width="30px"
-                  fill="#ffffff"
-                >
-                  <path
-                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                  />
-                </svg>
-              </button>
-            </li>
-            <li>
-              <a class="active" href="#home"> Home </a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#project">Project</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-          <button onclick="openNav()" class="icon" aria-label="Open Nav">
+      <div class="wrapper nav">
+        <div class="logo">
+          <h2>FA</h2>
+          <button
+            onclick="openNav()"
+            class="menu-bar"
+            id="menu"
+            aria-label="Open Nav"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="30px"
@@ -58,226 +33,331 @@
             </svg>
           </button>
         </div>
-      </nav>
+        <nav id="show">
+          <ul>
+            <li>
+              <a class="active" href="#home"> Home </a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main id="home">
-      <div class="wrapper hero">
-        <section class="intro-img">
-          <img class="leks" src="assets/lek.jpg" alt="lek" />
-        </section>
-        <section class="hero-section">
-          <p class="myname">Hello there — I'm Felix, and this is my work</p>
-          <h1>Learning Front-End, One Project at a Time</h1>
-          <p class="intro">
-            I'm a self-taught front-end developer with a focus on HTML, CSS, and
-            JavaScript. I'm learning to build responsive, user-friendly websites
-            and always looking to grow my skills through real-world projects.
-          </p>
+    <main>
+      <div id="home" class="wrapper main">
+        <img src="./assets/profile.jpg" alt="my-image" class="lek" />
+        <h1>Hello, I'm Felix</h1>
+        <p>🖥️ I'm a Front-end Developer</p>
+        <div class="icon-main">
+          <div>
+            <a href="https://github.com/han-Nari"
+              ><img src="./assets/github.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage
+              "
+              ><img src="./assets/in.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href=""><img src="./assets/msg.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="hero-links">
           <a
-            class="links"
+            class="download-cv"
             aria-label="Download Curriculum Vitae as PDF"
             href="assets/Felix.pdf"
             download
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000000"
-            >
-              <path
-                d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"
-              />
-            </svg>
-
             Download CV
           </a>
-        </section>
+          <a class="download-cv aqua" aria-label="View my work" href="#project">
+            View My Work
+          </a>
+        </div>
       </div>
     </main>
 
-    <section id="skills" class="wrapper-skills">
+    <section aria-labelledby="aboutMe">
+      <div class="wrapper about-me">
+        <h2 id="aboutMe" class="title-section">About Me</h2>
+        <p class="about">
+          Hi, I’m Felix, a front-end developer based in Valenzuela City. I
+          specialize in building responsive and user-friendly interfaces with
+          HTML, CSS, and JavaScript. I enjoy turning ideas into interactive
+          experiences using tools like React, Tailwind CSS, Git, and Figma.
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="tech-stack">
       <div class="wrapper">
-        <h2 class="title">Skills & Tools</h2>
+        <h2 id="tech-stack" class="title-section">Tech Stack</h2>
+        <div class="my-icons">
+          <div>
+            <img src="./assets/html.svg" alt="html" />
+          </div>
+          <div>
+            <img src="./assets/css.svg" alt="css" />
+          </div>
+          <div>
+            <img src="./assets/js.svg" alt="js" />
+          </div>
+          <div>
+            <img src="./assets/reactjs.svg" alt="reactjs" />
+          </div>
+          <div>
+            <img src="./assets/tailwind.png" alt="tailwind" />
+          </div>
+          <div>
+            <img src="./assets/github.png" alt="github" />
+          </div>
+          <div>
+            <img src="./assets/git.svg" alt="git" />
+          </div>
+          <div>
+            <img src="assets/figma.svg" alt="figma" />
+          </div>
+          <div>
+            <img src="./assets/vs.svg" alt="vs" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="skills">
+      <div class="wrapper">
+        <h2 id="skills" class="title-section">Skills</h2>
         <div class="skills">
-          <div class="box">
-            <img class="img" src="assets/html.svg" alt="html" />
-            <span class="text">Html</span>
-          </div>
-          <div class="box">
-            <img class="img" src="assets/css.svg" alt="css" />
-            <span class="text">Css</span>
-          </div>
-          <div class="box">
-            <img class="img" src="assets/js.svg" alt="js" />
-            <span class="text">JavaScript</span>
-          </div>
-          <div class="box">
-            <img class="img" src="assets/reactjs.svg" alt="reactjs" />
-            <span class="text">React Js</span>
-          </div>
-          <div class="box">
-            <img class="img" src="assets/figma.svg" alt="figma" />
-            <span class="text">Figma</span>
-          </div>
-          <div class="box">
-            <img class="img" src="assets/git.svg" alt="git" />
-            <span class="text">Git Bash</span>
-          </div>
-          <div class="box">
-            <img class="img" src="assets/github.svg" alt="githun" />
-            <span class="text">Github</span>
-          </div>
-          <div class="box">
-            <img class="img" src="assets/vs.svg" alt="vs code" />
-            <span class="text">VS Code</span>
-          </div>
-          <div class="box">
-            <img class="img" src="assets/sublime.svg" alt="sublime" />
-            <span class="text">SublimeText</span>
-          </div>
+          <ul class="skills-list">
+            <li>Mobile-first Design</li>
+            <li>Responsive Design</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Typography</li>
+            <li>Layouts</li>
+            <li>Wireframing</li>
+            <li>Designing</li>
+            <li>DOM Manipulation</li>
+            <li>Event Handling</li>
+            <li>Async/Await</li>
+            <li>Promises</li>
+            <li>Callbacks</li>
+            <li>Objects and Destructuring</li>
+            <li>React.Js Router</li>
+            <li>useState</li>
+            <li>useEffect</li>
+            <li>useContext</li>
+            <li>useRef</li>
+            <li>custom Hooks</li>
+            <li>Version Control (Git/GitHub)</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="project" class="wrapper-project">
+    <section aria-labelledby="project">
       <div class="wrapper">
-        <h2 class="title">Projects</h2>
-        <div class="card-project">
+        <h2 id="project" class="title-section">Projects</h2>
+        <div class="project-card">
           <!-- Card number 1 -->
-          <div class="card-view">
+          <div class="project-lists">
             <img src="assets/challenge02.png" alt="Front-end Challenge 02" />
-            <div class="inset">
-              <p class="number">01</p>
-              <h1 class="project-title">Browser extension manager UI</h1>
-              <button
-                aria-label="View project: Challenge02"
-                onclick="showDetails('assets/challenge02.png', 'challenge02')"
-                class="btn-project"
-              >
-                View Project
-              </button>
+            <div class="project-text">
+              <div class="project-flex">
+                <div class="project-top">
+                  <p class="project-number">01</p>
+                  <h3 class="project-title">Browser extension manager UI</h3>
+                </div>
+
+                <div class="project-tags">
+                  <p>Html</p>
+                  <p>Css</p>
+                  <p>JavaScript</p>
+                </div>
+
+                <span class="project-intro"
+                  >A clean and modern browser extension manager UI built with
+                  HTML, CSS, and JavaScript.</span
+                >
+              </div>
+
+              <div class="project-link">
+                <a
+                  class="project-button"
+                  href="https://han-nari.github.io/front-end-challenge/"
+                  target="_blank"
+                >
+                  Live View
+                </a>
+
+                <a
+                  class="project-button"
+                  href="https://github.com/han-nari/front-end-challenge"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </div>
             </div>
           </div>
-          <!-- Card number 2 -->
-          <div class="card-view">
-            <img src="assets/challenge01.png" alt="Front-end Challenge 02" />
-            <div class="inset">
-              <p class="number">02</p>
-              <h1 class="project-title">Fylo dark theme landing page</h1>
-              <button
-                aria-label="View project: Challenge01"
-                onclick="showDetails('assets/challenge01.png', 'challenge01')"
-                class="btn-project"
-              >
-                View Project
-              </button>
+
+          <!-- Card Number 2 -->
+          <div class="project-lists">
+            <img src="assets/challenge01.png" alt="Front-end Challenge 01" />
+            <div class="project-text">
+              <div class="project-flex">
+                <div class="project-top">
+                  <p class="project-number">02</p>
+                  <h3 class="project-title">Fylo dark theme landing page</h3>
+                </div>
+
+                <div class="project-tags">
+                  <p>Html</p>
+                  <p>Css</p>
+                  <p>JavaScript</p>
+                </div>
+
+                <span class="project-intro"
+                  >A visually appealing dark-themed landing page built using
+                  HTML and CSS.</span
+                >
+              </div>
+
+              <div class="project-link">
+                <a
+                  class="project-button"
+                  href="https://han-nari.github.io/front-end-challenge02/"
+                  target="_blank"
+                >
+                  Live View
+                </a>
+
+                <a
+                  class="project-button"
+                  href="https://github.com/han-nari/front-end-challenge02"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </div>
             </div>
           </div>
-          <!-- Card number 3 -->
-          <div class="card-view">
+
+          <!-- Card Number 3 -->
+          <div class="project-lists">
             <img src="assets/challenge03.png" alt="Front-end Challenge 03" />
-            <div class="inset">
-              <p class="number">03</p>
-              <h1 class="project-title">Product list with cart</h1>
-              <button
-                aria-label="View project: Challenge03"
-                onclick="showDetails('assets/challenge03.png', 'challenge03')"
-                class="btn-project"
-              >
-                View Project
-              </button>
+            <div class="project-text">
+              <div class="project-flex">
+                <div class="project-top">
+                  <p class="project-number">03</p>
+                  <h3 class="project-title">Product list with cart</h3>
+                </div>
+
+                <div class="project-tags">
+                  <p>Html</p>
+                  <p>Css</p>
+                  <p>React.Js</p>
+                </div>
+
+                <span class="project-intro"
+                  >A responsive product list page built with React, featuring a
+                  fully functional shopping cart.</span
+                >
+              </div>
+
+              <div class="project-link">
+                <a
+                  class="project-button"
+                  href="https://han-nari.github.io/front-end-challenge03/#/"
+                  target="_blank"
+                >
+                  Live View
+                </a>
+
+                <a
+                  class="project-button"
+                  href="https://github.com/han-Nari/front-end-challenge03"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </div>
             </div>
           </div>
-          <!-- Card number 4 -->
-          <div class="card-view">
-            <img src="assets/capstone.png" alt="Capstone" />
-            <div class="inset">
-              <p class="number">04</p>
-              <h1 class="project-title">Financial Management</h1>
-              <button
-                aria-label="View project: Capstone"
-                onclick="showDetails('assets/capstone.png', 'capstone')"
-                class="btn-project"
-              >
-                View Project
-              </button>
+
+          <!-- Card Number 4 -->
+          <div class="project-lists">
+            <img src="assets/event-hub.png" alt="Event Hub" />
+            <div class="project-text">
+              <div class="project-flex">
+                <div class="project-top">
+                  <p class="project-number">04</p>
+                  <h3 class="project-title">Event Hub</h3>
+                </div>
+
+                <div class="project-tags">
+                  <p>Html</p>
+                  <p>Tailwind Css</p>
+                  <p>React.Js</p>
+                </div>
+
+                <span class="project-intro"
+                  >Event Hub is where ideas turn into events 🚀. Create your own
+                  gatherings, discover activities by category, and find exactly
+                  what you need with a smart search feature. Powered by React
+                  and modern routing, Event Hub makes connecting through events
+                  effortless and fun.</span
+                >
+              </div>
+
+              <div class="project-link">
+                <a
+                  class="project-button"
+                  href="https://han-nari.github.io/event-hub/"
+                  target="_blank"
+                >
+                  Live View
+                </a>
+
+                <a
+                  class="project-button"
+                  href="https://github.com/han-Nari/event-hub"
+                  target="_blank"
+                >
+                  Source Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Card Details -->
-    <section class="wrapper">
-      <div role="dialog" class="card-details">
-        <button
-          onclick="closeDetails()"
-          class="icon close"
-          aria-label="Close details"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="30px"
-            viewBox="0 -960 960 960"
-            width="30px"
-            fill="#ffffff"
-          >
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-            />
-          </svg>
-        </button>
-        <img
-          class="card-view card-img"
-          width="400"
-          id="imgDetail"
-          alt="details  "
-        />
-
-        <div class="text-details">
-          <h2 class="project-name"></h2>
-          <p class="language"></p>
-          <p class="myinfo"></p>
-          <a target="_blank" class="ch1" href="">Front-end Mentor Link</a>
-          <div class="github">
-            <a target="_blank" class="view" href="">Live View</a>
-            <a target="_blank" class="source" href="#">Source Code</a>
-          </div>
+    <footer>
+      <div class="wrapper footer">
+        <h2 id="contact" class="title-section">My Contact Details</h2>
+        <div class="footer-flex">
+          <p>🇵🇭 📱 +63 927-827-0557</p>
+          <p>📧 Email: abungan082198@gmail.com</p>
+          <p>📍 18 P. Gregorio St., Brgy. Lingunan, Valenzuela City</p>
         </div>
-      </div>
-    </section>
 
-    <footer id="contact">
-      <div class="wrapper">
-        <div class="footer-container">
-          <h2 class="myDetails">My Contact Details</h2>
-          <div class="contacts">
-            <div class="contact">
-              <h5>EMAIL</h5>
-              <p>abungan082198@gmail.com</p>
-            </div>
-            <div class="contact">
-              <h5>PHONE</h5>
-              <p>+639278279557</p>
-            </div>
-          </div>
-
-          <p class="center">&copy; 2025 Felix — Front-End Developer</p>
-          <div class="footer-links">
-            <a href="https://github.com/han-Nari" target="_blank">GitHub</a> |
-            <a
-              href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-homepage"
-              target="_blank"
-              >Indeed</a
-            >
-            |
-            <a href="https://ph.jobstreet.com/profile/me" target="_blank"
-              >Jobstreet</a
-            >
-          </div>
+        <div class="footer-center">
+          <p>💼 Indeed | 🐱 GitHub | 💬 Messenger | 📘 Facebook</p>
+          <p>
+            © 2025 Felix — Front-End Developer | Built with HTML, CSS,
+            JavaScript & Figma
+          </p>
         </div>
       </div>
     </footer>
